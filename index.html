@@ -395,7 +395,7 @@ h1 span{color:var(--green);text-shadow:0 0 30px var(--glow2)}
 
 <!-- BARRA ACCESOS RAPIDOS -->
 <div style="display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap">
-  <a href="https://www.silao360.com.mx" target="_blank"
+  <a href="https://www.silao360.com" target="_blank"
      style="flex:1;min-width:120px;padding:12px 10px;background:linear-gradient(135deg,#003580,#0050c0);border:1px solid rgba(0,100,255,.4);border-radius:12px;color:#fff;font-family:'Outfit',sans-serif;font-size:13px;font-weight:700;text-decoration:none;text-align:center;letter-spacing:.5px;display:flex;align-items:center;justify-content:center;gap:6px">
     🌐 silao360.com.mx
   </a>
@@ -786,7 +786,7 @@ function adminResetAllExtras(){
   setTimeout(function(){msg.textContent="";},3000);
 }
 function adminCopyLink(){
-  var url="https://www.silao360.com.mx";
+  var url="https://www.silao360.com";
   if(navigator.clipboard){navigator.clipboard.writeText(url);}else{var ta=document.createElement("textarea");ta.value=url;document.body.appendChild(ta);ta.select();document.execCommand("copy");document.body.removeChild(ta);}
   var msg=document.getElementById("admin-cfg-msg");
   msg.style.color="var(--green)";msg.textContent="✅ Enlace copiado: "+url;
